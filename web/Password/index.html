@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Password Show & Hide</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container label{
+            font-size: 22px;
+        }
+
+        .container input{
+            width: 50vw;
+            font-size: 18px;
+            padding: 5px 8px;
+            border-radius: 10px;
+        }
+
+        .icons{
+            position: absolute;
+            top: 34px;
+            right: 55vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <label for="">password</label>
+    <input type="password" name="password" id="password" placeholder="Password">
+    <i class="icons fa-regular fa-eye"></i>
+    <i class="icons fa-regular fa-eye-slash"></i>
+
+        <script src="./code.jquery.com_jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.icons').click(function(){
+                    $ ('.icons').toggleClass("fa-eye-slash")
+                    var x = $('#password').attr("type");
+                    
+                    if(x == "password"){
+                        $ ('#password').attr("type","text");
+                    }
+                    else{
+                        $ ('#password').attr("type","password");
+                    }
+                })
+            })
+        </script>
+
+</div>
+</body>
+</html>

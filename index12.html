@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRcode</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        button{
+            margin: 10px 0px;
+            padding: 4px 8px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <label for="">Enter Text Or URL</label>
+            <input type="text" placeholder="Enter Text ot URL" id="input">
+        </div>
+        <button onclick="generate()">Generate</button>
+
+        <div id="qrcode"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+var input = document.getElementById("input");
+
+function generate(){
+    if(input.value == ""){
+        alert("Please Enter Valid URL")
+    }
+    else{
+    document.getElementById("qrcode").innerHTML = "";
+    var qrcode = new QRCode (document.getElementById ("qrcode") , {
+        text : input.value,
+        height : 120,
+        width : 120
+    })
+    input.value = "";
+}
+
+}
+</script>
+
+</body>
+</html>

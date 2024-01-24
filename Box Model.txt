@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box1{
+            background-color: rgb(116, 209, 209);
+            border: 2px solid rgb(63, 9, 77);
+            height: 200px;
+            border-radius: 20px;
+            width: 600px;
+            /* margin-top: 20px;
+            margin-left: 50px;
+            margin-bottom: 30px;
+            margin-right: 50px; */
+            margin: 50px auto;
+            /* nargin tap right bottom left */
+            margin: 40px 40px 80px 40px ;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            padding-left: 60px;
+            padding-right: 70px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>This is Box 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque beatae eveniet ullam, nihil recusandae qui doloremque perspiciatis cum accusantium omnis nostrum maiores numquam reprehenderit porro? Sapiente doloribus suscipit, a sit nesciunt ipsum amet voluptatum ut id nobis temporibus minus facilis eum at quibusdam dolor fuga necessitatibus illo pariatur inventore.</p>
+        </div>
+        <div class="box1">
+            <h1>This is Box2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum animi id esse? Animi et nisi, sint ex voluptas distinctio at cum doloribus nihil est ratione cumque itaque fugit quis! Ab est pariatur voluptates quia ea veniam ducimus laboriosam nemo molestiae.</p>
+        </div>
+        <div class="box1">
+            <h1>This is Box 3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, illo. Illum adipisci quidem vel eveniet soluta officia fuga rerum cum eaque. Sunt laborum dolore praesentium amet. Veritatis aliquam officiis suscipit temporibus molestias! Est, voluptate adipisci!</p>
+            
+        </div>
+    </div> 
+</body>
+</html>

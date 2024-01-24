@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            background-color: rgb(253, 114, 253);
+            height: 10vh;
+        }
+        .section{
+            height: 90vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        .left{
+            margin: 0px 10px;
+        }
+        .box{
+            background-color: rgb(0, 119, 255);
+            height: 10vh;
+            width: 20vw;
+            margin: 10px 0px;
+        }
+        .right{
+            background-color:rgb(0, 119, 255); 
+            height: 75vh;
+            width: 20vw;
+            margin: 10px;
+        }
+        .footer{
+            background-color::rgb(0, 119, 255) ;
+            height:10vh;
+        }
+        @media(max-widh:700px){
+            .section{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar"></div>
+    <div class="section">
+        <div class="left">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        <div>
+        <div class="right"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
